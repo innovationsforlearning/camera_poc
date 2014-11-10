@@ -45,7 +45,45 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+              alert("receivedEvent:"+ id);
+
+        switch(id) {
+            case 'deviceready':
+              // if deviceready 
+              // initialize camera app
+               camera_app.initialize();
+            break;
+           
+            default:
+            break;
+        }
+
+
     }
 };
 
 app.initialize();
+
+var camera_app = {
+
+    initialize: function(){
+        alert("camera_app.initialize");
+        var uri= takePicture();
+        $("div.app").replaceWith("<img src='"+uri+"'");
+    }
+
+}
+function takePicture() {
+    alert("takePicture")
+  navigator.camera.getPicture(function(imageURI) {
+
+    // imageURI is the URL of the image that we can use for
+    // an <img> element or backgroundImage.
+
+  }, function(err) {
+
+    // Ruh-roh, something bad happened
+    alert("getPicture:Fail:"+err)
+
+  }, {quality:50});
+}
