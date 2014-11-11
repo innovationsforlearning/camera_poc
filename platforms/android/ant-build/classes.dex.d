@@ -5,6 +5,13 @@
 /Users/johnfriedman/dev/camera-poc/platforms/android/ant-build/classes/org/apache/cordova/camera/CameraLauncher.class \
 /Users/johnfriedman/dev/camera-poc/platforms/android/ant-build/classes/org/apache/cordova/camera/ExifHelper.class \
 /Users/johnfriedman/dev/camera-poc/platforms/android/ant-build/classes/org/apache/cordova/camera/FileHelper.class \
+/Users/johnfriedman/dev/camera-poc/platforms/android/ant-build/classes/org/innovationsforlearning/camera/BuildConfig.class \
+/Users/johnfriedman/dev/camera-poc/platforms/android/ant-build/classes/org/innovationsforlearning/camera/CordovaApp.class \
+/Users/johnfriedman/dev/camera-poc/platforms/android/ant-build/classes/org/innovationsforlearning/camera/R$attr.class \
+/Users/johnfriedman/dev/camera-poc/platforms/android/ant-build/classes/org/innovationsforlearning/camera/R$drawable.class \
+/Users/johnfriedman/dev/camera-poc/platforms/android/ant-build/classes/org/innovationsforlearning/camera/R$string.class \
+/Users/johnfriedman/dev/camera-poc/platforms/android/ant-build/classes/org/innovationsforlearning/camera/R$xml.class \
+/Users/johnfriedman/dev/camera-poc/platforms/android/ant-build/classes/org/innovationsforlearning/camera/R.class \
 /Users/johnfriedman/dev/camera-poc/platforms/android/ant-build/classes/org/innovationsforliving/camera/BuildConfig.class \
 /Users/johnfriedman/dev/camera-poc/platforms/android/ant-build/classes/org/innovationsforliving/camera/CordovaApp.class \
 /Users/johnfriedman/dev/camera-poc/platforms/android/ant-build/classes/org/innovationsforliving/camera/R$attr.class \

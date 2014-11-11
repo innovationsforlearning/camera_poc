@@ -1,3 +1,3 @@
 # view AndroidManifest.xml #generated:6
--keep class org.innovationsforliving.camera.CordovaApp { <init>(...); }
+-keep class org.innovationsforlearning.camera.CordovaApp { <init>(...); }
 
