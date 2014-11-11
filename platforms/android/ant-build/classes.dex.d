@@ -1,4 +1,10 @@
 /Users/johnfriedman/dev/camera-poc/platforms/android/ant-build/classes.dex : \
+/Users/johnfriedman/dev/camera-poc/platforms/android/ant-build/classes/com/darktalker/cordova/screenshot/Screenshot$1.class \
+/Users/johnfriedman/dev/camera-poc/platforms/android/ant-build/classes/com/darktalker/cordova/screenshot/Screenshot$2.class \
+/Users/johnfriedman/dev/camera-poc/platforms/android/ant-build/classes/com/darktalker/cordova/screenshot/Screenshot.class \
+/Users/johnfriedman/dev/camera-poc/platforms/android/ant-build/classes/org/apache/cordova/camera/CameraLauncher.class \
+/Users/johnfriedman/dev/camera-poc/platforms/android/ant-build/classes/org/apache/cordova/camera/ExifHelper.class \
+/Users/johnfriedman/dev/camera-poc/platforms/android/ant-build/classes/org/apache/cordova/camera/FileHelper.class \
 /Users/johnfriedman/dev/camera-poc/platforms/android/ant-build/classes/org/innovationsforliving/camera/BuildConfig.class \
 /Users/johnfriedman/dev/camera-poc/platforms/android/ant-build/classes/org/innovationsforliving/camera/CordovaApp.class \
 /Users/johnfriedman/dev/camera-poc/platforms/android/ant-build/classes/org/innovationsforliving/camera/R$attr.class \

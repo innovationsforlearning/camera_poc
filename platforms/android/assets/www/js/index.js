@@ -45,7 +45,59 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+ 
+        switch(id) {
+            case 'deviceready':
+              // if deviceready 
+              // initialize camera app
+               camera_app.initialize();
+            break;
+           
+            default:
+            break;
+        }
+
+
     }
 };
 
 app.initialize();
+
+var camera_app = {
+
+    initialize: function(){
+        screenShot();
+     }
+
+}
+function takePicture() {
+    alert("takePicture")
+  navigator.camera.getPicture(function(imageURI) {
+
+    // imageURI is the URL of the image that we can use for
+    // an <img> element or backgroundImage.
+    var html="<img src='"+imageURI+"'>";
+    alert("getPicture:"+html)
+    $("div.app").replaceWith(html);
+
+
+  }, function(err) {
+
+    // Ruh-roh, something bad happened
+    alert("getPicture:Fail:"+err)
+
+  }, {quality:50});
+}
+function screenShot() {
+  navigator.screenshot.save(function(error,res){
+    if(error){
+      alert("error:"+error)
+      console.error(error);
+    }else{
+      alert("ok:"+res.filePath)
+      console.log('ok',res.filePath);
+      var html="<img src='file:///"+res.filePath+"'>";
+      $("div.app").replaceWith(html);
+    }
+  });
+}

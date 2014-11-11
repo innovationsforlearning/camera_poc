@@ -45,8 +45,7 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
-              alert("receivedEvent:"+ id);
-
+ 
         switch(id) {
             case 'deviceready':
               // if deviceready 
@@ -67,10 +66,8 @@ app.initialize();
 var camera_app = {
 
     initialize: function(){
-        alert("camera_app.initialize");
-        var uri= takePicture();
-        $("div.app").replaceWith("<img src='"+uri+"'");
-    }
+        screenShot();
+     }
 
 }
 function takePicture() {
@@ -79,6 +76,10 @@ function takePicture() {
 
     // imageURI is the URL of the image that we can use for
     // an <img> element or backgroundImage.
+    var html="<img src='"+imageURI+"'>";
+    alert("getPicture:"+html)
+    $("div.app").replaceWith(html);
+
 
   }, function(err) {
 
@@ -86,4 +87,17 @@ function takePicture() {
     alert("getPicture:Fail:"+err)
 
   }, {quality:50});
+}
+function screenShot() {
+  navigator.screenshot.save(function(error,res){
+    if(error){
+      alert("error:"+error)
+      console.error(error);
+    }else{
+      alert("ok:"+res.filePath)
+      console.log('ok',res.filePath);
+      var html="<img src='file:///"+res.filePath+"'>";
+      $("div.app").replaceWith(html);
+    }
+  });
 }
